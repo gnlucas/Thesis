@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Oct 28 14:39:16 2022
+# Process ID: 15140
+# Current directory: C:/Users/lgnar/OneDrive/22jsa-lucas/FPGA - Xilinx/Tent map
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16240 C:\Users\lgnar\OneDrive\22jsa-lucas\FPGA - Xilinx\Tent map\tent_map.xpr
+# Log file: C:/Users/lgnar/OneDrive/22jsa-lucas/FPGA - Xilinx/Tent map/vivado.log
+# Journal file: C:/Users/lgnar/OneDrive/22jsa-lucas/FPGA - Xilinx/Tent map\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/lgnar/OneDrive/22jsa-lucas/FPGA - Xilinx/Tent map/tent_map.xpr}
+update_compile_order -fileset sources_1

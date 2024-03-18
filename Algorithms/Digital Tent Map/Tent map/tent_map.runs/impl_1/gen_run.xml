@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg676-3" LaunchTime="1666957862">
+  <File Type="BITSTR-BMM" Name="tent_map_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="tent_map_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="tent_map_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="tent_map_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="tent_map.tcl"/>
+  <File Type="OPT-TIMING" Name="tent_map_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="tent_map_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="tent_map_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="tent_map_reports.tcl"/>
+  <File Type="OPT-DRC" Name="tent_map_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="tent_map.hwdef"/>
+  <File Type="PWROPT-DCP" Name="tent_map_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="tent_map_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="tent_map_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="tent_map_placed.dcp"/>
+  <File Type="PLACE-IO" Name="tent_map_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="tent_map_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="tent_map_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="tent_map_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="tent_map_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="tent_map_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="tent_map_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="tent_map.bgn"/>
+  <File Type="PLACE-TIMING" Name="tent_map_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="tent_map_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="tent_map.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="tent_map_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="tent_map_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="tent_map_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="tent_map.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="tent_map_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="tent_map_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="tent_map_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="tent_map_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="tent_map_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="tent_map_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="tent_map.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="tent_map_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="tent_map.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="tent_map_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="tent_map_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="tent_map.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="tent_map_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="tent_map_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="tent_map_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="tent_map_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="tent_map_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="tent_map_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="tent_map_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="tent_map_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="tent_map_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="tent_map_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="tent_map_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="tent_map_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="tent_map_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="tent_map_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="tent_map_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="tent_map_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="tent_map_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="tent_map_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="tent_map_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="tent_map.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="tent_map_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="tent_map.rbt"/>
+  <File Type="BITSTR-NKY" Name="tent_map.nky"/>
+  <File Type="BG-DRC" Name="tent_map.drc"/>
+  <File Type="RDI-RDI" Name="tent_map.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/tent_map.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="tent_map"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/timing.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Performance_Explore" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="route_design">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov  1 14:33:31 2021
+# Process ID: 10868
+# Current directory: C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Rosenbrock/HPPSO_v6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8476 C:\Users\Lucas\OneDrive\21ieee-lucas\FPGA - Xilinx\HPPSO\HPPSO_v6 - Rosenbrock\HPPSO_v6\HPPSO_v6.xpr
+# Log file: C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Rosenbrock/HPPSO_v6/vivado.log
+# Journal file: C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Rosenbrock/HPPSO_v6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Rosenbrock/HPPSO_v6/HPPSO_v6.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+file mkdir C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Rosenbrock/HPPSO_v6/HPPSO_v6.srcs/constrs_1
+file mkdir C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Rosenbrock/HPPSO_v6/HPPSO_v6.srcs/constrs_1
+file mkdir C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Rosenbrock/HPPSO_v6/HPPSO_v6.srcs/constrs_1/new
+file mkdir C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Rosenbrock/HPPSO_v6/HPPSO_v6.srcs/constrs_1/new
+file mkdir C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Rosenbrock/HPPSO_v6/HPPSO_v6.srcs/constrs_1/new
+file mkdir C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Rosenbrock/HPPSO_v6/HPPSO_v6.srcs/constrs_1/new
+file mkdir C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Rosenbrock/HPPSO_v6/HPPSO_v6.srcs/constrs_1
+file mkdir {C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Rosenbrock/HPPSO_v6/HPPSO_v6.srcs/constrs_1/new}
+close [ open {C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Rosenbrock/HPPSO_v6/HPPSO_v6.srcs/constrs_1/new/timing.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Rosenbrock/HPPSO_v6/HPPSO_v6.srcs/constrs_1/new/timing.xdc}}
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1

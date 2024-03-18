@@ -1,0 +1,151 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Apr 26 17:15:32 2022
+| Host         : Lucas running 64-bit major release  (build 9200)
+| Command      : report_methodology -file HPPSO_v6_methodology_drc_routed.rpt -pb HPPSO_v6_methodology_drc_routed.pb -rpx HPPSO_v6_methodology_drc_routed.rpx
+| Design       : HPPSO_v6
+| Device       : xc7a100tfgg676-3
+| Speed File   : -3
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 23
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| SYNTH-11  | Warning  | DSP output not registered     | 20         |
+| TIMING-18 | Warning  | Missing input or output delay | 3          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-11#1 Warning
+DSP output not registered  
+DSP instance fit_part1/mul/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#2 Warning
+DSP output not registered  
+DSP instance fit_part1/mul2/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#3 Warning
+DSP output not registered  
+DSP instance fit_part10/mul/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#4 Warning
+DSP output not registered  
+DSP instance fit_part10/mul2/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#5 Warning
+DSP output not registered  
+DSP instance fit_part2/mul/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#6 Warning
+DSP output not registered  
+DSP instance fit_part2/mul2/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#7 Warning
+DSP output not registered  
+DSP instance fit_part3/mul/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#8 Warning
+DSP output not registered  
+DSP instance fit_part3/mul2/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#9 Warning
+DSP output not registered  
+DSP instance fit_part4/mul/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#10 Warning
+DSP output not registered  
+DSP instance fit_part4/mul2/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#11 Warning
+DSP output not registered  
+DSP instance fit_part5/mul/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#12 Warning
+DSP output not registered  
+DSP instance fit_part5/mul2/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#13 Warning
+DSP output not registered  
+DSP instance fit_part6/mul/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#14 Warning
+DSP output not registered  
+DSP instance fit_part6/mul2/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#15 Warning
+DSP output not registered  
+DSP instance fit_part7/mul/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#16 Warning
+DSP output not registered  
+DSP instance fit_part7/mul2/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#17 Warning
+DSP output not registered  
+DSP instance fit_part8/mul/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#18 Warning
+DSP output not registered  
+DSP instance fit_part8/mul2/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#19 Warning
+DSP output not registered  
+DSP instance fit_part9/mul/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#20 Warning
+DSP output not registered  
+DSP instance fit_part9/mul2/multOp is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on FSL_Rst relative to clock(s) FSL_Clk
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on start relative to clock(s) FSL_Clk
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on ready relative to clock(s) FSL_Clk
+Related violations: <none>
+
+

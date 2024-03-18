@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jun  2 00:15:04 2022
+# Process ID: 9780
+# Current directory: C:/Users/Lucas/OneDrive/22ieee-tcas-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3924 C:\Users\Lucas\OneDrive\22ieee-tcas-lucas\FPGA - Xilinx\HPPSO\HPPSO_v6 - Sphere\HPPSO_v6\HPPSO_v6.xpr
+# Log file: C:/Users/Lucas/OneDrive/22ieee-tcas-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/vivado.log
+# Journal file: C:/Users/Lucas/OneDrive/22ieee-tcas-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Lucas/OneDrive/22ieee-tcas-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.xpr}
+update_compile_order -fileset sources_1

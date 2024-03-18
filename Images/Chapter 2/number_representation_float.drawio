@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2023-10-28T22:38:38.113Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.69" etag="fCyvMTOP8kHm5Okr0_y_" version="22.0.8" type="device">
+  <diagram name="Page-1" id="MIHF49M_1FndtOb76cS5">
+    <mxGraphModel dx="868" dy="474" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="K_XM3ssYQPXn5fFH8BcQ-5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="770" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K_XM3ssYQPXn5fFH8BcQ-2" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;$$b_{1}$$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K_XM3ssYQPXn5fFH8BcQ-3" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;$$b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}b_{9}$$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="80" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K_XM3ssYQPXn5fFH8BcQ-4" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;$$b_{10}b_{11}b_{12}b_{13}b_{14}b_{15}b_{16}b_{17}b_{18}b_{19}b_{20}b_{21}b_{22}b_{23}b_{24}b_{25}b_{26}b_{27}b_{28}b_{29}b_{30}b_{31}b_{32}&lt;br&gt;$$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K_XM3ssYQPXn5fFH8BcQ-6" value="" style="endArrow=none;html=1;rounded=0;fillColor=#eeeeee;strokeColor=#36393d;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="120" as="sourcePoint" />
+            <mxPoint x="100" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K_XM3ssYQPXn5fFH8BcQ-9" value="" style="endArrow=none;html=1;rounded=0;fillColor=#eeeeee;strokeColor=#36393d;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="120" as="sourcePoint" />
+            <mxPoint x="260" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K_XM3ssYQPXn5fFH8BcQ-16" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;$$\mbox{Sign}$$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="130" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K_XM3ssYQPXn5fFH8BcQ-17" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;$$\mbox{Exponent}$$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="130" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="K_XM3ssYQPXn5fFH8BcQ-18" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;$$\mbox{Mantissa}$$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="475" y="130" width="130" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

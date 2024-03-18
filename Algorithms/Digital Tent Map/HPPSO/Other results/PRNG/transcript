@@ -1,0 +1,23 @@
+# Load canceled
+# Compile of fpupack.vhd was successful.
+# Compile of tb_tent_map_prng.vhd was successful with warnings.
+# Compile of tent_map_prng.vhd was successful with warnings.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_tent_map
+# vsim -gui work.tb_tent_map 
+# Start time: 00:28:20 on Jun 02,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.fpupack(body)
+# Loading work.tb_tent_map(behaviour)
+# Loading work.tent_map_prng(behavior)
+add wave -position insertpoint sim:/tb_tent_map/DUT/*
+run
+# End time: 00:36:00 on Jun 02,2022, Elapsed time: 0:07:40
+# Errors: 0, Warnings: 5
+# Closing project C:/Users/Lucas/OneDrive/22ieee-tcas-lucas/FPGA - Xilinx/HPPSO/Other results/PRNG/tent_map_prng.mpf

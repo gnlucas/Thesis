@@ -1,0 +1,339 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jun  2 00:11:10 2022
+| Host         : Lucas running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file HPPSO_v6_control_sets_placed.rpt
+| Design       : HPPSO_v6
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   261 |
+|    Minimum number of control sets                        |   261 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |  1285 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   261 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |    32 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |   226 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             115 |           59 |
+| No           | No                    | Yes                    |              40 |           26 |
+| No           | Yes                   | No                     |             445 |          178 |
+| Yes          | No                    | No                     |             851 |          286 |
+| Yes          | No                    | Yes                    |             690 |          330 |
+| Yes          | Yes                   | No                     |            6878 |         2755 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+----------------------------------------------+--------------------------------+------------------+----------------+
+|    Clock Signal    |                 Enable Signal                |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++--------------------+----------------------------------------------+--------------------------------+------------------+----------------+
+|  FSL_Clk_IBUF_BUFG | compsoc/ready_cmpsc_reg_0                    | FSL_Rst_IBUF                   |                1 |              1 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/random/E[0]                        | FSL_Rst_IBUF                   |                1 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/FSM_onehot_state_reg[2]_2[0]  | FSL_Rst_IBUF                   |                1 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/FSM_onehot_state_reg[0]_1[0]  | FSL_Rst_IBUF                   |                2 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/random/E[0]                        | FSL_Rst_IBUF                   |                2 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/random/E[0]                        | FSL_Rst_IBUF                   |                3 |              4 |
+|  FSL_Clk_IBUF_BUFG | compsoc/s_y_pj[3]_i_1_n_0                    | FSL_Rst_IBUF                   |                2 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/random/E[0]                        | FSL_Rst_IBUF                   |                1 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/FSM_onehot_state_reg[0]_1[0]  | FSL_Rst_IBUF                   |                2 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/FSM_onehot_state_reg[0]_1[0]  | FSL_Rst_IBUF                   |                2 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/FSM_onehot_state_reg[0]_1[0]  | FSL_Rst_IBUF                   |                1 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/FSM_onehot_state_reg[2]_2[0]  | FSL_Rst_IBUF                   |                2 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/FSM_onehot_state_reg[0]_1[0]  | FSL_Rst_IBUF                   |                1 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/random/E[0]                       | FSL_Rst_IBUF                   |                1 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/FSM_onehot_state_reg[2]_2[0]  | FSL_Rst_IBUF                   |                1 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/FSM_onehot_state_reg[2]_2[0]  | FSL_Rst_IBUF                   |                2 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/random/E[0]                        | FSL_Rst_IBUF                   |                1 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/random/E[0]                        | FSL_Rst_IBUF                   |                1 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/FSM_onehot_state_reg[0]_1[0]  | FSL_Rst_IBUF                   |                2 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/FSM_onehot_state_reg[0]_1[0] | FSL_Rst_IBUF                   |                1 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/random/E[0]                        | FSL_Rst_IBUF                   |                2 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/FSM_onehot_state_reg[2]_2[0]  | FSL_Rst_IBUF                   |                3 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/random/E[0]                        | FSL_Rst_IBUF                   |                1 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/FSM_onehot_state_reg[0]_1[0]  | FSL_Rst_IBUF                   |                2 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/FSM_onehot_state_reg[0]_2[0]  | FSL_Rst_IBUF                   |                2 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/random/E[0]                        | FSL_Rst_IBUF                   |                1 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/FSM_onehot_state_reg[2]_2[0]  | FSL_Rst_IBUF                   |                3 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/FSM_onehot_state_reg[2]_3[0]  | FSL_Rst_IBUF                   |                2 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/FSM_onehot_state_reg[2]_2[0]  | FSL_Rst_IBUF                   |                3 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/FSM_onehot_state_reg[2]_2[0] | FSL_Rst_IBUF                   |                3 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/FSM_onehot_state_reg[2]_2[0]  | FSL_Rst_IBUF                   |                2 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/FSM_onehot_state_reg[0]_1[0]  | FSL_Rst_IBUF                   |                1 |              4 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/FSM_onehot_state_pso_reg[1][0]     | FSL_Rst_IBUF                   |                2 |              5 |
+|  FSL_Clk_IBUF_BUFG | compsoc/FSM_onehot_state_reg_n_0_[11]        | FSL_Rst_IBUF                   |                5 |             12 |
+|  FSL_Clk_IBUF_BUFG | compsoc/FSM_onehot_state_pso_reg[3]          |                                |                4 |             14 |
+|  FSL_Clk_IBUF_BUFG | calc_inertia/calc_add_inertia/update         | FSL_Rst_IBUF                   |               17 |             23 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/random/ready_reg_0                | fit_part10/random/dim_reg[3]_0 |               12 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/random/ready_reg_1                 | fit_part7/random/dim_reg[3]    |                8 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/FSM_onehot_state_reg[12]      | fit_part3/adsb/dim_reg[3]_2    |                6 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/random/ready_reg_0                 | fit_part2/random/dim_reg[3]_0  |               10 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/FSM_onehot_state_reg[12]      | fit_part4/adsb/dim_reg[3]_2    |                7 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/random/ready_reg_0                 | fit_part7/random/dim_reg[3]_0  |                7 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/dim_reg[3]                    | fit_part7/adsb/dim_reg[3]_0    |                6 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/dim_reg[0]                    | fit_part7/adsb/dim_reg[3]_1    |                6 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/FSM_onehot_state_reg[12]      | fit_part7/adsb/dim_reg[3]_2    |                7 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/dim_reg[3]                    | fit_part6/adsb/dim_reg[3]_0    |                8 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/random/ready_reg_1                 | fit_part2/random/dim_reg[3]    |                9 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/FSM_onehot_state_reg[12]      | fit_part6/adsb/dim_reg[3]_2    |                8 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/random/ready_reg_1                 | fit_part5/random/dim_reg[3]    |                9 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/FSM_onehot_state_reg[12]     | fit_part10/adsb/dim_reg[3]_2   |                8 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/dim_reg[3]                   | fit_part10/adsb/dim_reg[3]_0   |               11 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/dim_reg[0]                   | fit_part10/adsb/dim_reg[3]_1   |               11 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/random/ready_reg_0                 | fit_part5/random/dim_reg[3]_0  |                7 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/dim_reg[0]                    | fit_part5/adsb/dim_reg[3]_1    |                6 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/dim_reg[0]                    | fit_part6/adsb/dim_reg[3]_1    |               11 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/dim_reg[0]                    | fit_part4/adsb/dim_reg[3]_1    |                6 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/random/ready_reg_0                 | fit_part6/random/dim_reg[3]_0  |                6 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/random/ready_reg_1                 | fit_part6/random/dim_reg[3]    |               11 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/dim_reg[3]                    | fit_part4/adsb/dim_reg[3]_0    |                7 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/random/ready_reg_1                 | fit_part4/random/dim_reg[3]    |               13 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/random/ready_reg_1                 | fit_part3/random/dim_reg[3]    |               10 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/random/ready_reg_0                 | fit_part3/random/dim_reg[3]_0  |                7 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/FSM_onehot_state_reg[12]      | fit_part2/adsb/dim_reg[3]_2    |                5 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/dim_reg[3]                    | fit_part2/adsb/dim_reg[3]_0    |                8 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/dim_reg[0]                    | fit_part2/adsb/dim_reg[3]_1    |                9 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/FSM_onehot_state_reg[12]      | fit_part8/adsb/dim_reg[3]_2    |                7 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/dim_reg[3]                    | fit_part8/adsb/dim_reg[3]_0    |               12 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/dim_reg[0]                    | fit_part8/adsb/dim_reg[3]_1    |               10 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/dim_reg[3]                    | fit_part5/adsb/dim_reg[3]_0    |               10 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/dim_reg[3]                    | fit_part3/adsb/dim_reg[3]_0    |                9 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/random/ready_reg_1                 | fit_part8/random/dim_reg[3]    |               12 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/random/ready_reg_0                 | fit_part8/random/dim_reg[3]_0  |                9 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/dim_reg[0]                    | fit_part3/adsb/dim_reg[3]_1    |                8 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/FSM_onehot_state_reg[12]      | fit_part9/adsb/dim_reg[3]_2    |                8 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/dim_reg[0]                    | fit_part9/adsb/dim_reg[3]_1    |               11 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/dim_reg[3]                    | fit_part9/adsb/dim_reg[3]_0    |               12 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/random/ready_reg_1                 | fit_part9/random/dim_reg[3]    |               13 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/random/ready_reg_0                 | fit_part9/random/dim_reg[3]_0  |               10 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/FSM_onehot_state_reg[12]      | fit_part5/adsb/dim_reg[3]_2    |                7 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/random/ready_reg_1                | fit_part10/random/dim_reg[3]   |               14 |             25 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/random/ready_reg_0                 | fit_part4/random/dim_reg[3]_0  |                9 |             25 |
+|  FSL_Clk_IBUF_BUFG | compsoc/key[25]_i_1_n_0                      | FSL_Rst_IBUF                   |                7 |             26 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/update                        | FSL_Rst_IBUF                   |               17 |             26 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/update                        | FSL_Rst_IBUF                   |               19 |             26 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/update                       | FSL_Rst_IBUF                   |               17 |             26 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/update                        | FSL_Rst_IBUF                   |               20 |             26 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/update                        | FSL_Rst_IBUF                   |               18 |             26 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/update                        | FSL_Rst_IBUF                   |               21 |             26 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/update                        | FSL_Rst_IBUF                   |               20 |             26 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/update                        | FSL_Rst_IBUF                   |               18 |             26 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/update                        | FSL_Rst_IBUF                   |               19 |             26 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/update                        | FSL_Rst_IBUF                   |               19 |             26 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/mul/update                         | FSL_Rst_IBUF                   |               11 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/FSM_onehot_state_reg[2]_1[0] |                                |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/FSM_onehot_state_reg[0]_0[0] | FSL_Rst_IBUF                   |               19 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/count_reg[2][0]              | FSL_Rst_IBUF                   |                6 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/FSM_onehot_state_reg[8][0]   |                                |                7 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/vdim_reg[2]_0[0]             | FSL_Rst_IBUF                   |               11 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/vdim_reg[0]_0[0]             | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/vdim_reg[2]_1[0]             | FSL_Rst_IBUF                   |                8 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/vdim_reg[1][0]               | FSL_Rst_IBUF                   |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/vdim_reg[0][0]               | FSL_Rst_IBUF                   |                8 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/mul/update                        | FSL_Rst_IBUF                   |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/FSM_onehot_state_reg[0]_0[0]  | FSL_Rst_IBUF                   |               17 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/FSM_onehot_state_reg[2]_1[0]  |                                |                6 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/FSM_onehot_state_reg[8][0]    |                                |                5 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/count_reg[2][0]               | FSL_Rst_IBUF                   |                6 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/vdim_reg[0][0]                | FSL_Rst_IBUF                   |                8 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/vdim_reg[2]_1[0]              | FSL_Rst_IBUF                   |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/vdim_reg[0]_0[0]              | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/vdim_reg[1][0]                | FSL_Rst_IBUF                   |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/vdim_reg[2][0]                | FSL_Rst_IBUF                   |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/vdim_reg[2]_0[0]              | FSL_Rst_IBUF                   |                8 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/mul/update                         | FSL_Rst_IBUF                   |               13 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/random/ready_reg_4                 |                                |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/mul/update                         | FSL_Rst_IBUF                   |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/random/ready_reg_4                 |                                |                7 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/mul/update                         | FSL_Rst_IBUF                   |               11 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/random/ready_reg_4                 |                                |               13 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/FSM_onehot_state_reg[8][0]    |                                |                8 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/FSM_onehot_state_reg[2]_1[0]  |                                |                6 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/FSM_onehot_state_reg[0]_0[0]  | FSL_Rst_IBUF                   |               20 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/count_reg[2][0]               | FSL_Rst_IBUF                   |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/vdim_reg[2]_0[0]              | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/vdim_reg[0][0]                | FSL_Rst_IBUF                   |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/vdim_reg[2][0]                | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/vdim_reg[2]_1[0]              | FSL_Rst_IBUF                   |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/vdim_reg[0]_0[0]              | FSL_Rst_IBUF                   |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/vdim_reg[1][0]                | FSL_Rst_IBUF                   |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/random/ready_reg_4                 |                                |                7 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/vdim_reg[2][0]               | FSL_Rst_IBUF                   |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/FSM_onehot_state_reg[0]_0[0]  | FSL_Rst_IBUF                   |               15 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/FSM_onehot_state_reg[2]_1[0]  |                                |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/FSM_onehot_state_reg[8][0]    |                                |                8 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/count_reg[2][0]               | FSL_Rst_IBUF                   |                4 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/vdim_reg[1][0]                | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/vdim_reg[0]_0[0]              | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/vdim_reg[2]_1[0]              | FSL_Rst_IBUF                   |               15 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/vdim_reg[2]_0[0]              | FSL_Rst_IBUF                   |                8 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/vdim_reg[0][0]                | FSL_Rst_IBUF                   |               13 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/vdim_reg[2][0]                | FSL_Rst_IBUF                   |               11 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/mul/update                         | FSL_Rst_IBUF                   |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/FSM_onehot_state_reg[0]_0[0]  | FSL_Rst_IBUF                   |               19 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/FSM_onehot_state_reg[2]_1[0]  |                                |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/FSM_onehot_state_reg[8][0]    |                                |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/count_reg[2][0]               | FSL_Rst_IBUF                   |                4 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/vdim_reg[2][0]                | FSL_Rst_IBUF                   |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/vdim_reg[0]_0[0]              | FSL_Rst_IBUF                   |                8 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/vdim_reg[0][0]                | FSL_Rst_IBUF                   |                8 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/vdim_reg[2]_1[0]              | FSL_Rst_IBUF                   |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/vdim_reg[1][0]                | FSL_Rst_IBUF                   |               13 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/vdim_reg[2]_0[0]              | FSL_Rst_IBUF                   |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/random/ready_reg_4                 |                                |               11 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/mul/update                         | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/FSM_onehot_state_reg[0]_0[0]  | FSL_Rst_IBUF                   |               15 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/FSM_onehot_state_reg[2]_1[0]  |                                |                8 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/FSM_onehot_state_reg[8][0]    |                                |               11 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/count_reg[2][0]               | FSL_Rst_IBUF                   |                5 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/vdim_reg[2][0]                | FSL_Rst_IBUF                   |               14 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/vdim_reg[0][0]                | FSL_Rst_IBUF                   |               14 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/vdim_reg[0]_0[0]              | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/vdim_reg[2]_0[0]              | FSL_Rst_IBUF                   |               13 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/vdim_reg[2]_1[0]              | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/vdim_reg[1][0]                | FSL_Rst_IBUF                   |               15 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/random/ready_reg_4                 |                                |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/mul/update                         | FSL_Rst_IBUF                   |               11 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/FSM_onehot_state_reg[0]_0[0]  | FSL_Rst_IBUF                   |               18 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/FSM_onehot_state_reg[2]_1[0]  |                                |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/vdim_reg[2][0]                | FSL_Rst_IBUF                   |               13 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/FSM_onehot_state_reg[8][0]    |                                |                6 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/count_reg[2][0]               | FSL_Rst_IBUF                   |                4 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/vdim_reg[0]_0[0]              | FSL_Rst_IBUF                   |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/vdim_reg[1][0]                | FSL_Rst_IBUF                   |               13 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/vdim_reg[2]_1[0]              | FSL_Rst_IBUF                   |               16 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/vdim_reg[2]_0[0]              | FSL_Rst_IBUF                   |               15 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/vdim_reg[0][0]                | FSL_Rst_IBUF                   |               13 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/vdim_reg[2][0]                | FSL_Rst_IBUF                   |               13 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/dim_reg[1]                    |                                |               13 |             27 |
+|  FSL_Clk_IBUF_BUFG | calc_inertia/calc_add_inertia/E[0]           | FSL_Rst_IBUF                   |               13 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/FSM_onehot_state_reg[12]      | fit_part1/adsb/dim_reg[3]      |               11 |             27 |
+|  FSL_Clk_IBUF_BUFG | calc_inertia/s_op_a_add[26]_i_1_n_0          |                                |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/FSM_onehot_state_reg[2]_1[0]  |                                |                7 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/random/ready_reg_0                 | fit_part1/random/dim_reg[3]_2  |               11 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/random/ready_reg_1                 | fit_part1/random/dim_reg[3]_1  |               14 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/FSM_onehot_state_reg[0]_0[0]  | FSL_Rst_IBUF                   |               15 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/FSM_onehot_state_reg[8][0]    |                                |                6 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/count_reg[2][0]               | FSL_Rst_IBUF                   |                7 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/vdim_reg[0][0]                | FSL_Rst_IBUF                   |                8 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/vdim_reg[0]_0[0]              | FSL_Rst_IBUF                   |               11 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/vdim_reg[2]_1[0]              | FSL_Rst_IBUF                   |               11 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/vdim_reg[2]_0[0]              | FSL_Rst_IBUF                   |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/vdim_reg[2][0]                | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/vdim_reg[1][0]                | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/mul/update                         | FSL_Rst_IBUF                   |               11 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/random/ready_reg_4                 |                                |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/random/ready_reg_3                 | fit_part1/random/dim_reg[3]    |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/random/ready_reg_2                 | fit_part1/random/dim_reg[3]_0  |               13 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/random/ready_reg_4                |                                |               14 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/FSM_onehot_state_reg[0]_0[0]  | FSL_Rst_IBUF                   |               16 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/FSM_onehot_state_reg[2]_2[0]  | FSL_Rst_IBUF                   |                8 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/FSM_onehot_state_reg[2]_1[0]  |                                |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/FSM_onehot_state_reg[8][0]    |                                |                8 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/random/ready_reg_4                 |                                |               13 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/vdim_reg[2]_1[0]              | FSL_Rst_IBUF                   |                6 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/vdim_reg[2]_0[0]              | FSL_Rst_IBUF                   |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/FSM_onehot_state_reg[0]_0[0]  | FSL_Rst_IBUF                   |               17 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/FSM_onehot_state_reg[2]_1[0]  |                                |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/vdim_reg[0][0]                | FSL_Rst_IBUF                   |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/vdim_reg[1][0]                | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/vdim_reg[0]_0[0]              | FSL_Rst_IBUF                   |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/FSM_onehot_state_reg[8][0]    |                                |               10 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/count_reg[2][0]               | FSL_Rst_IBUF                   |                9 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/vdim_reg[1][0]                | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/vdim_reg[2]_0[0]              | FSL_Rst_IBUF                   |               15 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/vdim_reg[2]_1[0]              | FSL_Rst_IBUF                   |               13 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/vdim_reg[0]_0[0]              | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/vdim_reg[0][0]                | FSL_Rst_IBUF                   |               12 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/vdim_reg[2][0]                | FSL_Rst_IBUF                   |               14 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/mul/update                         | FSL_Rst_IBUF                   |               11 |             27 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/start                              | FSL_Rst_IBUF                   |               22 |             42 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/start                             | FSL_Rst_IBUF                   |               21 |             42 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/start                              | FSL_Rst_IBUF                   |               21 |             42 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/start                              | FSL_Rst_IBUF                   |               21 |             42 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/start                              | FSL_Rst_IBUF                   |               24 |             42 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/start                              | FSL_Rst_IBUF                   |               24 |             42 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/start                              | FSL_Rst_IBUF                   |               20 |             42 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/start                              | FSL_Rst_IBUF                   |               24 |             42 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/start                              | FSL_Rst_IBUF                   |               21 |             42 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/start                              | FSL_Rst_IBUF                   |               23 |             42 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/FSM_onehot_state_reg[7][0]    | FSL_Rst_IBUF                   |               25 |             54 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/FSM_onehot_state_reg[7][0]    | FSL_Rst_IBUF                   |               21 |             54 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/FSM_onehot_state_reg[7][0]    | FSL_Rst_IBUF                   |               23 |             54 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/FSM_onehot_state_reg[7][0]    | FSL_Rst_IBUF                   |               26 |             54 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/FSM_onehot_state_reg[7][0]    | FSL_Rst_IBUF                   |               23 |             54 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/FSM_onehot_state_reg[7][0]    | FSL_Rst_IBUF                   |               23 |             54 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/FSM_onehot_state_reg[7][0]    | FSL_Rst_IBUF                   |               24 |             54 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/FSM_onehot_state_reg[7][0]    | FSL_Rst_IBUF                   |               26 |             54 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/FSM_onehot_state_reg[7][0]   | FSL_Rst_IBUF                   |               26 |             54 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/FSM_onehot_state_reg[7][0]    | FSL_Rst_IBUF                   |               25 |             54 |
+|  FSL_Clk_IBUF_BUFG | fit_part7/adsb/E[0]                          | FSL_Rst_IBUF                   |               34 |             55 |
+|  FSL_Clk_IBUF_BUFG | fit_part4/adsb/E[0]                          | FSL_Rst_IBUF                   |               32 |             55 |
+|  FSL_Clk_IBUF_BUFG | fit_part2/adsb/E[0]                          | FSL_Rst_IBUF                   |               31 |             55 |
+|  FSL_Clk_IBUF_BUFG | fit_part9/adsb/E[0]                          | FSL_Rst_IBUF                   |               32 |             55 |
+|  FSL_Clk_IBUF_BUFG | fit_part8/adsb/E[0]                          | FSL_Rst_IBUF                   |               36 |             55 |
+|  FSL_Clk_IBUF_BUFG | fit_part3/adsb/E[0]                          | FSL_Rst_IBUF                   |               30 |             55 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/adsb/E[0]                          | FSL_Rst_IBUF                   |               30 |             55 |
+|  FSL_Clk_IBUF_BUFG | fit_part6/adsb/E[0]                          | FSL_Rst_IBUF                   |               32 |             55 |
+|  FSL_Clk_IBUF_BUFG | fit_part5/adsb/E[0]                          | FSL_Rst_IBUF                   |               31 |             55 |
+|  FSL_Clk_IBUF_BUFG | fit_part10/adsb/E[0]                         | FSL_Rst_IBUF                   |               35 |             55 |
+|  FSL_Clk_IBUF_BUFG |                                              |                                |               59 |            115 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/fready_reg_8[0]                    | FSL_Rst_IBUF                   |               67 |            189 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/fready_reg_6[0]                    | FSL_Rst_IBUF                   |               52 |            189 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/fready_reg_3[0]                    | FSL_Rst_IBUF                   |               47 |            189 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/fready_reg_1[0]                    | FSL_Rst_IBUF                   |               58 |            189 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/fready_reg_2[0]                    | FSL_Rst_IBUF                   |               53 |            189 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/fready_reg_7[0]                    | FSL_Rst_IBUF                   |               56 |            189 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/E[0]                               | FSL_Rst_IBUF                   |               59 |            189 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/fready_reg_5[0]                    | FSL_Rst_IBUF                   |               52 |            189 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/fready_reg_4[0]                    | FSL_Rst_IBUF                   |               50 |            189 |
+|  FSL_Clk_IBUF_BUFG | fit_part1/fready_reg_0[0]                    | FSL_Rst_IBUF                   |               50 |            189 |
+|  FSL_Clk_IBUF_BUFG |                                              | FSL_Rst_IBUF                   |              204 |            485 |
++--------------------+----------------------------------------------+--------------------------------+------------------+----------------+
+
+

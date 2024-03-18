@@ -1,0 +1,854 @@
+
+*** Running vivado
+    with args -log HPPSO_v6.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HPPSO_v6.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source HPPSO_v6.tcl -notrace
+Command: synth_design -top HPPSO_v6 -part xc7a100tfgg676-3 -fanout_limit 400 -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tfgg676-3
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6732 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 811.289 ; gain = 178.512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'HPPSO_v6' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:30]
+INFO: [Synth 8-3491] module 'particle_ula_v2_sphere' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:23' bound to instance 'fit_part1' of component 'particle_ula_v2_sphere' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'particle_ula_v2_sphere' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:41]
+INFO: [Synth 8-3491] module 'tent_map_prng' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/tent_map_prng.vhd:18' bound to instance 'random' of component 'tent_map_prng' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'tent_map_prng' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/tent_map_prng.vhd:27]
+WARNING: [Synth 8-614] signal 'init' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/tent_map_prng.vhd:114]
+INFO: [Synth 8-256] done synthesizing module 'tent_map_prng' (1#1) [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/tent_map_prng.vhd:27]
+INFO: [Synth 8-3491] module 'addsubfsm_v6' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/addsubfsm_v6.vhd:16' bound to instance 'adsb' of component 'addsubfsm_v6' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'addsubfsm_v6' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/addsubfsm_v6.vhd:27]
+WARNING: [Synth 8-6014] Unused sequential element sl_reg was removed.  [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/addsubfsm_v6.vhd:115]
+WARNING: [Synth 8-6014] Unused sequential element sign_reg was removed.  [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/addsubfsm_v6.vhd:197]
+WARNING: [Synth 8-6014] Unused sequential element s_res_exp_reg was removed.  [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/addsubfsm_v6.vhd:198]
+WARNING: [Synth 8-6014] Unused sequential element out_man_reg was removed.  [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/addsubfsm_v6.vhd:199]
+WARNING: [Synth 8-6014] Unused sequential element pos_reg was removed.  [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/addsubfsm_v6.vhd:223]
+INFO: [Synth 8-256] done synthesizing module 'addsubfsm_v6' (2#1) [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/addsubfsm_v6.vhd:27]
+INFO: [Synth 8-3491] module 'multiplierfsm_v2' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/multiplierfsm_v2.vhd:16' bound to instance 'mul' of component 'multiplierfsm_v2' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'multiplierfsm_v2' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/multiplierfsm_v2.vhd:26]
+WARNING: [Synth 8-614] signal 's_mul_man' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/multiplierfsm_v2.vhd:54]
+WARNING: [Synth 8-614] signal 's_add_exp' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/multiplierfsm_v2.vhd:54]
+WARNING: [Synth 8-614] signal 's_add_exp1' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/multiplierfsm_v2.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'multiplierfsm_v2' (3#1) [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/multiplierfsm_v2.vhd:26]
+INFO: [Synth 8-3491] module 'multiplierfsm_v2' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/multiplierfsm_v2.vhd:16' bound to instance 'mul2' of component 'multiplierfsm_v2' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:111]
+WARNING: [Synth 8-614] signal 'vpos_act' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:369]
+WARNING: [Synth 8-614] signal 'vbest_ys' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:382]
+WARNING: [Synth 8-614] signal 'vbest_yi' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:395]
+WARNING: [Synth 8-614] signal 'vpos_act' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:408]
+WARNING: [Synth 8-614] signal 'vpos_act' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:418]
+INFO: [Synth 8-256] done synthesizing module 'particle_ula_v2_sphere' (4#1) [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:41]
+INFO: [Synth 8-3491] module 'particle_ula_v2_sphere' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:23' bound to instance 'fit_part2' of component 'particle_ula_v2_sphere' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:123]
+INFO: [Synth 8-3491] module 'particle_ula_v2_sphere' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:23' bound to instance 'fit_part3' of component 'particle_ula_v2_sphere' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:140]
+INFO: [Synth 8-3491] module 'particle_ula_v2_sphere' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:23' bound to instance 'fit_part4' of component 'particle_ula_v2_sphere' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:157]
+INFO: [Synth 8-3491] module 'particle_ula_v2_sphere' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:23' bound to instance 'fit_part5' of component 'particle_ula_v2_sphere' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:174]
+INFO: [Synth 8-3491] module 'particle_ula_v2_sphere' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:23' bound to instance 'fit_part6' of component 'particle_ula_v2_sphere' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:191]
+INFO: [Synth 8-3491] module 'particle_ula_v2_sphere' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:23' bound to instance 'fit_part7' of component 'particle_ula_v2_sphere' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:208]
+INFO: [Synth 8-3491] module 'particle_ula_v2_sphere' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:23' bound to instance 'fit_part8' of component 'particle_ula_v2_sphere' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:225]
+INFO: [Synth 8-3491] module 'particle_ula_v2_sphere' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:23' bound to instance 'fit_part9' of component 'particle_ula_v2_sphere' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:242]
+INFO: [Synth 8-3491] module 'particle_ula_v2_sphere' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/particle_ula_v2_sphere.vhd:23' bound to instance 'fit_part10' of component 'particle_ula_v2_sphere' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:259]
+INFO: [Synth 8-3491] module 'compare_social' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/compare_social.vhd:16' bound to instance 'compsoc' of component 'compare_social' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'compare_social' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/compare_social.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'compare_social' (5#1) [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/compare_social.vhd:35]
+INFO: [Synth 8-3491] module 'inertia' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/inertia.vhd:23' bound to instance 'calc_inertia' of component 'inertia' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:294]
+INFO: [Synth 8-638] synthesizing module 'inertia' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/inertia.vhd:32]
+INFO: [Synth 8-3491] module 'addsubfsm_v6' declared at 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/addsubfsm_v6.vhd:16' bound to instance 'calc_add_inertia' of component 'addsubfsm_v6' [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/inertia.vhd:46]
+INFO: [Synth 8-226] default block is never used [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/inertia.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'inertia' (6#1) [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/inertia.vhd:32]
+WARNING: [Synth 8-614] signal 's_y_pj' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:541]
+WARNING: [Synth 8-614] signal 's_y1' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:541]
+WARNING: [Synth 8-614] signal 's_y2' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:541]
+WARNING: [Synth 8-614] signal 's_y3' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:541]
+WARNING: [Synth 8-614] signal 's_y4' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:541]
+WARNING: [Synth 8-614] signal 's_y5' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:541]
+WARNING: [Synth 8-614] signal 's_y6' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:541]
+WARNING: [Synth 8-614] signal 's_y7' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:541]
+WARNING: [Synth 8-614] signal 's_y8' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:541]
+WARNING: [Synth 8-614] signal 's_y9' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:541]
+WARNING: [Synth 8-614] signal 's_y10' is read in the process but is not in the sensitivity list [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:541]
+INFO: [Synth 8-256] done synthesizing module 'HPPSO_v6' (7#1) [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/HPPSO_v6.vhd:30]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 876.465 ; gain = 243.688
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 876.465 ; gain = 243.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 876.465 ; gain = 243.688
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/constrs_1/new/timing.xdc]
+Finished Parsing XDC File [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/constrs_1/new/timing.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1043.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.224 . Memory (MB): peak = 1043.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1043.766 ; gain = 410.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1043.766 ; gain = 410.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1043.766 ; gain = 410.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'addsubfsm_v6'
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.srcs/sources_1/new/multiplierfsm_v2.vhd:122]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'particle_ula_v2_sphere'
+INFO: [Synth 8-5544] ROM "vnew_pos" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'compare_social'
+INFO: [Synth 8-5544] ROM "cmpsc_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ready_cmpsc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_pso_reg' in module 'HPPSO_v6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 waiting |                              001 |                               00
+                  addsub |                              010 |                               01
+                  output |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'addsubfsm_v6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 waiting |                      00000000001 |                             0000
+              multiplier |                      00000000010 |                             0001
+                    add1 |                      00000000100 |                             0010
+                     acc |                      00000001000 |                             0011
+                  decoin |                      00000010000 |                             0101
+                 inertia |                      00000100000 |                             0110
+              individual |                      00001000000 |                             0111
+                  social |                      00010000000 |                             1000
+                velocity |                      00100000000 |                             1001
+                position |                      01000000000 |                             1010
+              initialize |                      10000000000 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'particle_ula_v2_sphere'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 waiting |                     000000000001 |                             0000
+                minimum1 |                     000000000010 |                             0001
+                minimum2 |                     000000000100 |                             0010
+                minimum3 |                     000000001000 |                             0011
+                minimum4 |                     000000010000 |                             0100
+                minimum5 |                     000000100000 |                             0101
+                minimum6 |                     000001000000 |                             0110
+                minimum7 |                     000010000000 |                             0111
+                minimum8 |                     000100000000 |                             1000
+                minimum9 |                     001000000000 |                             1001
+               minimum10 |                     010000000000 |                             1010
+               output_cs |                     100000000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'compare_social'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 waiting |                            00001 |                              000
+                  init_x |                            00010 |                              001
+               fitness_x |                            00100 |                              010
+             compara_soc |                            01000 |                              011
+                 updatep |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_pso_reg' using encoding 'one-hot' in module 'HPPSO_v6'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1043.766 ; gain = 410.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |particle_ula_v2_sphere |          10|      9269|
+|2     |HPPSO_v6__GC0          |           1|      9386|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     20 Bit       Adders := 22    
+	   2 Input     20 Bit       Adders := 11    
+	   2 Input      9 Bit       Adders := 40    
+	   3 Input      8 Bit       Adders := 22    
+	   2 Input      8 Bit       Adders := 42    
+	   2 Input      4 Bit       Adders := 40    
++---XORs : 
+	   2 Input      1 Bit         XORs := 231   
++---Registers : 
+	              162 Bit    Registers := 20    
+	               27 Bit    Registers := 196   
+	               23 Bit    Registers := 10    
+	               20 Bit    Registers := 21    
+	                4 Bit    Registers := 32    
+	                2 Bit    Registers := 20    
+	                1 Bit    Registers := 122   
++---Muxes : 
+	   2 Input    162 Bit        Muxes := 50    
+	   7 Input    162 Bit        Muxes := 10    
+	   3 Input    162 Bit        Muxes := 20    
+	   2 Input     27 Bit        Muxes := 71    
+	   4 Input     27 Bit        Muxes := 40    
+	  11 Input     27 Bit        Muxes := 50    
+	  12 Input     27 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 42    
+	   2 Input     19 Bit        Muxes := 76    
+	   2 Input     18 Bit        Muxes := 40    
+	  12 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	  11 Input     11 Bit        Muxes := 10    
+	   2 Input     11 Bit        Muxes := 140   
+	   2 Input      8 Bit        Muxes := 55    
+	   3 Input      8 Bit        Muxes := 20    
+	   6 Input      5 Bit        Muxes := 10    
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 70    
+	  18 Input      4 Bit        Muxes := 10    
+	  11 Input      4 Bit        Muxes := 10    
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 31    
+	   3 Input      3 Bit        Muxes := 11    
+	   2 Input      2 Bit        Muxes := 21    
+	   6 Input      2 Bit        Muxes := 20    
+	   2 Input      1 Bit        Muxes := 374   
+	   8 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 20    
+	  11 Input      1 Bit        Muxes := 290   
+	  12 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module HPPSO_v6 
+Detailed RTL Component Info : 
++---Registers : 
+	              162 Bit    Registers := 10    
+	               27 Bit    Registers := 10    
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 14    
+Module tent_map_prng 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 20    
++---Registers : 
+	               23 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	  18 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+Module addsubfsm_v6__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     20 Bit       Adders := 2     
+	   2 Input     20 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 5     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 28    
+	   8 Input      1 Bit        Muxes := 1     
+Module multiplierfsm_v2__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     27 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module multiplierfsm_v2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     27 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module particle_ula_v2_sphere 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	              162 Bit    Registers := 1     
+	               27 Bit    Registers := 15    
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input    162 Bit        Muxes := 5     
+	   7 Input    162 Bit        Muxes := 1     
+	   3 Input    162 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 6     
+	   4 Input     27 Bit        Muxes := 2     
+	  11 Input     27 Bit        Muxes := 5     
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 14    
+	   2 Input      4 Bit        Muxes := 2     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	  11 Input      1 Bit        Muxes := 29    
+Module compare_social 
+Detailed RTL Component Info : 
++---Registers : 
+	               27 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  12 Input     27 Bit        Muxes := 1     
+	  12 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 3     
+Module addsubfsm_v6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     20 Bit       Adders := 2     
+	   2 Input     20 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 5     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 28    
+	   8 Input      1 Bit        Muxes := 1     
+Module inertia 
+Detailed RTL Component Info : 
++---Registers : 
+	               27 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: operator multOp is absorbed into DSP multOp.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[16] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[17] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[21] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[22] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[23] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/calc_inertia/\s_op_b_add_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/calc_inertia/s_op_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part1/random/\tent_reg[17]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part1/random/\tent_reg[16]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part1/random/\tent_reg[15]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part1/random/\tent_reg[13]_LDC )
+WARNING: [Synth 8-3332] Sequential element (tent_reg[17]_LDC) is unused and will be removed from module tent_map_prng.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[17]_C) is unused and will be removed from module tent_map_prng.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[9]_C) is unused and will be removed from module tent_map_prng.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[16]_LDC) is unused and will be removed from module tent_map_prng.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[16]_C) is unused and will be removed from module tent_map_prng.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[8]_C) is unused and will be removed from module tent_map_prng.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[15]_LDC) is unused and will be removed from module tent_map_prng.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[15]_C) is unused and will be removed from module tent_map_prng.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[7]_C) is unused and will be removed from module tent_map_prng.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[13]_LDC) is unused and will be removed from module tent_map_prng.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[13]_C) is unused and will be removed from module tent_map_prng.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[5]_C) is unused and will be removed from module tent_map_prng.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part2/random/\tent_reg[17]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part2/random/\tent_reg[16]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part2/random/\tent_reg[12]_LDC )
+WARNING: [Synth 8-3332] Sequential element (tent_reg[17]_LDC) is unused and will be removed from module tent_map_prng__1.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[17]_C) is unused and will be removed from module tent_map_prng__1.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[9]_C) is unused and will be removed from module tent_map_prng__1.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[16]_LDC) is unused and will be removed from module tent_map_prng__1.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[16]_C) is unused and will be removed from module tent_map_prng__1.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[8]_C) is unused and will be removed from module tent_map_prng__1.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[12]_LDC) is unused and will be removed from module tent_map_prng__1.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[12]_C) is unused and will be removed from module tent_map_prng__1.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[4]_C) is unused and will be removed from module tent_map_prng__1.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part3/random/\tent_reg[18]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part3/random/\tent_reg[16]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part3/random/\tent_reg[15]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part3/random/\tent_reg[13]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part3/random/\tent_reg[12]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part3/random/\tent_reg[19]_LDC )
+WARNING: [Synth 8-3332] Sequential element (tent_reg[19]_LDC) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[19]_C) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[11]_C) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[18]_LDC) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[18]_C) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[10]_C) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[16]_LDC) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[16]_C) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[8]_C) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[15]_LDC) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[15]_C) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[7]_C) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[13]_LDC) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[13]_C) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[5]_C) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[12]_LDC) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[12]_C) is unused and will be removed from module tent_map_prng__2.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[4]_C) is unused and will be removed from module tent_map_prng__2.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part4/random/\tent_reg[18]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part4/random/\tent_reg[16]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part4/random/\tent_reg[19]_LDC )
+WARNING: [Synth 8-3332] Sequential element (tent_reg[19]_LDC) is unused and will be removed from module tent_map_prng__3.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[19]_C) is unused and will be removed from module tent_map_prng__3.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[11]_C) is unused and will be removed from module tent_map_prng__3.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[18]_LDC) is unused and will be removed from module tent_map_prng__3.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[18]_C) is unused and will be removed from module tent_map_prng__3.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[10]_C) is unused and will be removed from module tent_map_prng__3.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[16]_LDC) is unused and will be removed from module tent_map_prng__3.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[16]_C) is unused and will be removed from module tent_map_prng__3.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[8]_C) is unused and will be removed from module tent_map_prng__3.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part5/random/\tent_reg[18]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part5/random/\tent_reg[17]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part5/random/\tent_reg[15]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part5/random/\tent_reg[14]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part5/random/\tent_reg[13]_LDC )
+WARNING: [Synth 8-3332] Sequential element (tent_reg[18]_LDC) is unused and will be removed from module tent_map_prng__4.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[18]_C) is unused and will be removed from module tent_map_prng__4.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[10]_C) is unused and will be removed from module tent_map_prng__4.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[17]_LDC) is unused and will be removed from module tent_map_prng__4.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[17]_C) is unused and will be removed from module tent_map_prng__4.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[9]_C) is unused and will be removed from module tent_map_prng__4.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[15]_LDC) is unused and will be removed from module tent_map_prng__4.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[15]_C) is unused and will be removed from module tent_map_prng__4.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[7]_C) is unused and will be removed from module tent_map_prng__4.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[14]_LDC) is unused and will be removed from module tent_map_prng__4.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[14]_C) is unused and will be removed from module tent_map_prng__4.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[6]_C) is unused and will be removed from module tent_map_prng__4.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[13]_LDC) is unused and will be removed from module tent_map_prng__4.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[13]_C) is unused and will be removed from module tent_map_prng__4.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[5]_C) is unused and will be removed from module tent_map_prng__4.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part6/random/\tent_reg[18]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part6/random/\tent_reg[17]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part6/random/\tent_reg[15]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part6/random/\tent_reg[12]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part6/random/\tent_reg[19]_LDC )
+WARNING: [Synth 8-3332] Sequential element (tent_reg[19]_LDC) is unused and will be removed from module tent_map_prng__5.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[19]_C) is unused and will be removed from module tent_map_prng__5.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[11]_C) is unused and will be removed from module tent_map_prng__5.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[18]_LDC) is unused and will be removed from module tent_map_prng__5.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[18]_C) is unused and will be removed from module tent_map_prng__5.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[10]_C) is unused and will be removed from module tent_map_prng__5.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[17]_LDC) is unused and will be removed from module tent_map_prng__5.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[17]_C) is unused and will be removed from module tent_map_prng__5.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[9]_C) is unused and will be removed from module tent_map_prng__5.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[15]_LDC) is unused and will be removed from module tent_map_prng__5.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[15]_C) is unused and will be removed from module tent_map_prng__5.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[7]_C) is unused and will be removed from module tent_map_prng__5.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[12]_LDC) is unused and will be removed from module tent_map_prng__5.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[12]_C) is unused and will be removed from module tent_map_prng__5.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[4]_C) is unused and will be removed from module tent_map_prng__5.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part7/random/\tent_reg[17]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part7/random/\tent_reg[16]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part7/random/\tent_reg[15]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part7/random/\tent_reg[14]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part7/random/\tent_reg[19]_LDC )
+WARNING: [Synth 8-3332] Sequential element (tent_reg[19]_LDC) is unused and will be removed from module tent_map_prng__6.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[19]_C) is unused and will be removed from module tent_map_prng__6.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[11]_C) is unused and will be removed from module tent_map_prng__6.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[17]_LDC) is unused and will be removed from module tent_map_prng__6.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[17]_C) is unused and will be removed from module tent_map_prng__6.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[9]_C) is unused and will be removed from module tent_map_prng__6.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[16]_LDC) is unused and will be removed from module tent_map_prng__6.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[16]_C) is unused and will be removed from module tent_map_prng__6.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[8]_C) is unused and will be removed from module tent_map_prng__6.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[15]_LDC) is unused and will be removed from module tent_map_prng__6.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[15]_C) is unused and will be removed from module tent_map_prng__6.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[7]_C) is unused and will be removed from module tent_map_prng__6.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[14]_LDC) is unused and will be removed from module tent_map_prng__6.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[14]_C) is unused and will be removed from module tent_map_prng__6.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[6]_C) is unused and will be removed from module tent_map_prng__6.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part8/random/\tent_reg[17]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part8/random/\tent_reg[15]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part8/random/\tent_reg[13]_LDC )
+WARNING: [Synth 8-3332] Sequential element (tent_reg[17]_LDC) is unused and will be removed from module tent_map_prng__7.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[17]_C) is unused and will be removed from module tent_map_prng__7.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[9]_C) is unused and will be removed from module tent_map_prng__7.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[15]_LDC) is unused and will be removed from module tent_map_prng__7.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[15]_C) is unused and will be removed from module tent_map_prng__7.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[7]_C) is unused and will be removed from module tent_map_prng__7.
+WARNING: [Synth 8-3332] Sequential element (tent_reg[13]_LDC) is unused and will be removed from module tent_map_prng__7.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part9/random/\tent_reg[17]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part9/random/\tent_reg[16]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part9/random/\tent_reg[19]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part10/random/\tent_reg[17]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part10/random/\tent_reg[15]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part10/random/\tent_reg[14]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part10/random/\tent_reg[13]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fit_part10/random/\tent_reg[12]_LDC )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1043.766 ; gain = 410.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|multiplierfsm_v2 | A*B         | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplierfsm_v2 | A*B         | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------------+------------+----------+
+|      |RTL Partition             |Replication |Instances |
++------+--------------------------+------------+----------+
+|1     |particle_ula_v2_sphere    |           1|      5222|
+|2     |HPPSO_v6__GC0             |           1|      9109|
+|3     |particle_ula_v2_sphere__1 |           1|      5326|
+|4     |particle_ula_v2_sphere__2 |           1|      5326|
+|5     |particle_ula_v2_sphere__3 |           1|      5326|
+|6     |particle_ula_v2_sphere__4 |           1|      5326|
+|7     |particle_ula_v2_sphere__5 |           1|      5326|
+|8     |particle_ula_v2_sphere__6 |           1|      5326|
+|9     |particle_ula_v2_sphere__7 |           1|      5326|
+|10    |particle_ula_v2_sphere__8 |           1|      5326|
+|11    |particle_ula_v2_sphere__9 |           1|      5326|
++------+--------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:30 . Memory (MB): peak = 1113.934 ; gain = 481.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1158.988 ; gain = 526.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------------+------------+----------+
+|      |RTL Partition             |Replication |Instances |
++------+--------------------------+------------+----------+
+|1     |particle_ula_v2_sphere    |           1|      5218|
+|2     |HPPSO_v6__GC0             |           1|      9109|
+|3     |particle_ula_v2_sphere__1 |           1|      5326|
+|4     |particle_ula_v2_sphere__2 |           1|      5326|
+|5     |particle_ula_v2_sphere__3 |           1|      5326|
+|6     |particle_ula_v2_sphere__4 |           1|      5326|
+|7     |particle_ula_v2_sphere__5 |           1|      5326|
+|8     |particle_ula_v2_sphere__6 |           1|      5326|
+|9     |particle_ula_v2_sphere__7 |           1|      5326|
+|10    |particle_ula_v2_sphere__8 |           1|      5326|
+|11    |particle_ula_v2_sphere__9 |           1|      5326|
++------+--------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:48 ; elapsed = 00:01:50 . Memory (MB): peak = 1192.570 ; gain = 559.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:51 ; elapsed = 00:01:54 . Memory (MB): peak = 1194.273 ; gain = 561.496
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:51 ; elapsed = 00:01:54 . Memory (MB): peak = 1194.273 ; gain = 561.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:52 ; elapsed = 00:01:55 . Memory (MB): peak = 1194.273 ; gain = 561.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:52 ; elapsed = 00:01:55 . Memory (MB): peak = 1194.273 ; gain = 561.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:52 ; elapsed = 00:01:55 . Memory (MB): peak = 1194.273 ; gain = 561.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:53 ; elapsed = 00:01:55 . Memory (MB): peak = 1194.273 ; gain = 561.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |   671|
+|3     |DSP48E1_1 |    20|
+|4     |LUT1      |    28|
+|5     |LUT2      |  2087|
+|6     |LUT3      |  1250|
+|7     |LUT4      |  2480|
+|8     |LUT5      |  2833|
+|9     |LUT6      |  7106|
+|10    |FDCE      |   946|
+|11    |FDPE      |    84|
+|12    |FDRE      |  5913|
+|13    |FDSE      |  2626|
+|14    |IBUF      |     3|
+|15    |OBUF      |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------+-------------------------+------+
+|      |Instance             |Module                   |Cells |
++------+---------------------+-------------------------+------+
+|1     |top                  |                         | 26049|
+|2     |  calc_inertia       |inertia                  |   513|
+|3     |    calc_add_inertia |addsubfsm_v6_46          |   455|
+|4     |  compsoc            |compare_social           |  1394|
+|5     |  fit_part1          |particle_ula_v2_sphere   |  2223|
+|6     |    adsb             |addsubfsm_v6_42          |   666|
+|7     |    mul              |multiplierfsm_v2_43      |   175|
+|8     |    mul2             |multiplierfsm_v2_44      |   149|
+|9     |    random           |tent_map_prng_45         |   214|
+|10    |  fit_part10         |particle_ula_v2_sphere_0 |  2221|
+|11    |    adsb             |addsubfsm_v6_38          |   629|
+|12    |    mul              |multiplierfsm_v2_39      |   177|
+|13    |    mul2             |multiplierfsm_v2_40      |   183|
+|14    |    random           |tent_map_prng_41         |   220|
+|15    |  fit_part2          |particle_ula_v2_sphere_1 |  2221|
+|16    |    adsb             |addsubfsm_v6_34          |   629|
+|17    |    mul              |multiplierfsm_v2_35      |   177|
+|18    |    mul2             |multiplierfsm_v2_36      |   183|
+|19    |    random           |tent_map_prng_37         |   220|
+|20    |  fit_part3          |particle_ula_v2_sphere_2 |  2221|
+|21    |    adsb             |addsubfsm_v6_30          |   629|
+|22    |    mul              |multiplierfsm_v2_31      |   177|
+|23    |    mul2             |multiplierfsm_v2_32      |   183|
+|24    |    random           |tent_map_prng_33         |   220|
+|25    |  fit_part4          |particle_ula_v2_sphere_3 |  2221|
+|26    |    adsb             |addsubfsm_v6_26          |   629|
+|27    |    mul              |multiplierfsm_v2_27      |   177|
+|28    |    mul2             |multiplierfsm_v2_28      |   183|
+|29    |    random           |tent_map_prng_29         |   220|
+|30    |  fit_part5          |particle_ula_v2_sphere_4 |  2221|
+|31    |    adsb             |addsubfsm_v6_22          |   629|
+|32    |    mul              |multiplierfsm_v2_23      |   177|
+|33    |    mul2             |multiplierfsm_v2_24      |   183|
+|34    |    random           |tent_map_prng_25         |   220|
+|35    |  fit_part6          |particle_ula_v2_sphere_5 |  2221|
+|36    |    adsb             |addsubfsm_v6_18          |   629|
+|37    |    mul              |multiplierfsm_v2_19      |   177|
+|38    |    mul2             |multiplierfsm_v2_20      |   183|
+|39    |    random           |tent_map_prng_21         |   220|
+|40    |  fit_part7          |particle_ula_v2_sphere_6 |  2221|
+|41    |    adsb             |addsubfsm_v6_14          |   629|
+|42    |    mul              |multiplierfsm_v2_15      |   177|
+|43    |    mul2             |multiplierfsm_v2_16      |   183|
+|44    |    random           |tent_map_prng_17         |   220|
+|45    |  fit_part8          |particle_ula_v2_sphere_7 |  2221|
+|46    |    adsb             |addsubfsm_v6_10          |   629|
+|47    |    mul              |multiplierfsm_v2_11      |   177|
+|48    |    mul2             |multiplierfsm_v2_12      |   183|
+|49    |    random           |tent_map_prng_13         |   220|
+|50    |  fit_part9          |particle_ula_v2_sphere_8 |  2221|
+|51    |    adsb             |addsubfsm_v6             |   629|
+|52    |    mul              |multiplierfsm_v2         |   177|
+|53    |    mul2             |multiplierfsm_v2_9       |   183|
+|54    |    random           |tent_map_prng            |   220|
++------+---------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:53 ; elapsed = 00:01:55 . Memory (MB): peak = 1194.273 ; gain = 561.496
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 202 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:41 ; elapsed = 00:01:49 . Memory (MB): peak = 1194.273 ; gain = 394.195
+Synthesis Optimization Complete : Time (s): cpu = 00:01:53 ; elapsed = 00:01:56 . Memory (MB): peak = 1194.273 ; gain = 561.496
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 691 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1210.348 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+126 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:03 ; elapsed = 00:02:08 . Memory (MB): peak = 1210.348 ; gain = 855.414
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1210.348 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Lucas/OneDrive/21ieee-lucas/FPGA - Xilinx/HPPSO/HPPSO_v6 - Sphere/HPPSO_v6/HPPSO_v6.runs/synth_1/HPPSO_v6.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file HPPSO_v6_utilization_synth.rpt -pb HPPSO_v6_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 26 17:10:55 2022...
